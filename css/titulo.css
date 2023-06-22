@@ -73,7 +73,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .titulo_div{
         flex-direction: column-reverse;
         align-items: flex-start;

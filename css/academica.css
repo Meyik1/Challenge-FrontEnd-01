@@ -69,7 +69,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .academica_coursos_item_img{
         height: 110px;
         width: 300px;
