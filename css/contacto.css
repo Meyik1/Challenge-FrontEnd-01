@@ -1,0 +1,104 @@
+.contacto {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 2.8rem;
+    background-color: var(--cor-de-fundo2)
+}
+
+.contacto_contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto_titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.contcato_subtexto{
+    margin: 15px;
+    font-weight: bold;
+}
+
+.contacto_form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contato_input{
+    border: none;
+    margin: 15px 0 15px 15px;
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.contato_textarea{
+    border: none;
+    margin: 1rem 0 1rem 1rem;
+    resize: none;
+    height: 120px;
+    max-width: auto;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    font-family: var(--raleway);
+    padding-left: 10px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+.contacto__boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--raleway);
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    border-color: var(--cor-de-boton);
+    background-color: var(--cor-de-boton);
+    margin: 1rem 1rem 0 1rem;
+    width: 150px;
+    height: 52px;
+}
+
+.pdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--raleway);
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    border-color: var(--cor-de-boton);
+    padding: 12px;
+    background-color: var(--cor-de-boton);
+    margin: 1rem 1rem 0 0;
+    width: 150px;
+    height: 52px;
+}
+
+@media (max-width: 768px) {
+    .contacto_img{
+        display: none;
+    }
+    .contato_input{
+        margin: 15px 15px 15px 15px;
+        max-width: 90%;
+    }
+    .contato_textarea{
+        margin: 15px 15px 15px 15px;
+        max-width: 90%;
+    }
+
+    .contacto_titulo{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,87 @@
+
+.titulo_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3.7rem;
+}
+
+.titulo_bio{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.titulo_datos{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 10px 0px 0 0;
+}
+
+.titulo_subseccion{
+    font-size: 1.5rem;
+    padding: 25px 0 25px 0;
+}
+
+.titulo_network{
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo_network_item{
+    padding: 0 35px 0 0;
+}
+
+.titulo_network_item img {
+    padding: 0 0 0 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.titulo_perfil {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .titulo_bio{
+        font-size: 1.5rem;
+    }
+    .titulo_datos{
+        font-size: .9rem;
+    }
+    .titulo_subseccion{
+        font-size: .9rem;
+        padding: 15px 0 15px 0;
+    }
+    .titulo_network_item{
+        padding: 0 25px 0 0;
+        font-size: .8rem;
+    }
+    .titulo_network_item img {
+        width: 9px;
+        height: 9px;
+    }
+    
+    .titulo_perfil {
+        width: 180px;
+        height: 180px;
+    }
+    .titulo_div{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .titulo_div{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }        
+    .titulo_perfil {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0 10px 0;
+    }
+}

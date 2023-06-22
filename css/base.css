@@ -1,0 +1,33 @@
+
+    :root {
+        --variable: valor;
+        --raleway: "Raleway", sans-serif;
+
+        --cor-de-fundo: #F5F5F5;
+        --cor-de-fundo2: #eaf2fd;
+        --cor-de-link: #000;
+        --cor-de-font: #464646;
+        --cor-de-boton: #2a7ae4;
+    }
+
+    body {
+        font-family: var(--raleway);
+        box-sizing: border-box;
+        line-height: 1;
+        background-color: var(--cor-de-fundo);
+        color: var(--cor-de-font);
+    }
+
+    ol, ul,li {
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--cor-de-link);
+    }
+
+    .container {
+        padding-right: 6%;
+        padding-left: 6%;
+    }

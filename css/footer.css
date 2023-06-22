@@ -1,0 +1,17 @@
+.footer{
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.footer_rodapie{
+    font-family: var(--raleway);
+    font-size: 1rem;
+    color: var(--cor-de-font);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer_rodapie{
+        font-size: .8rem;
+    }
+}
