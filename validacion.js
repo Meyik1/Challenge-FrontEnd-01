@@ -4,14 +4,6 @@ const asunto = document.getElementById("asunto");
 const mensaje = document.getElementById("mensaje");
 const form = document.getElementById("form");
 const enviarBtn = document.getElementById("enviar");
-const descargarBtn = document.getElementById("descargar");
-
-descargarBtn.addEventListener("click", () => {
-    const pdf = new jsPDF();
-    const contenido = document.documentElement;
-    pdf.fromHTML(contenido, 15, 15);
-    pdf.save("Portafolio_Manuel_Mora.pdf");
-});
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
