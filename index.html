@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="css/experiencia.css">
         <link rel="stylesheet" href="css/contacto.css">
         <link rel="stylesheet" href="css/footer.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.7.107/pdf.min.js" integrity="sha512-FbzTWNUXsD1HkMnfODpqj77B8pWe5eG9MaVtaUyZQGe8FaeQg1sNKtwMWk9USkHFu3ub8dg5PSE24s4JJpJQcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     </head>
     <body>
         <section class="menu container">
@@ -271,14 +273,14 @@
                     <h2 class="contacto_titulo">Contacto</h2>
                     <h3 class="contcato_subtexto">¿Quieres contactarme?</h3>
                     <h3 class="contcato_subtexto">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="contacto_form" name="form">
-                        <input class="contato_input" type="text" name="Nombre" placeholder="Nombre">
-                        <input class="contato_input" type="email" name="Email" placeholder="E-mail">
-                        <input class="contato_input" type="text" name="Asunto" placeholder="Asunto">                        
-                        <textarea class="contato_textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                    <form class="contacto_form" id="form">
+                        <input class="contato_input"  id="nombre" placeholder="Nombre" required autocomplete="off">
+                        <input class="contato_input"  id="email"  placeholder="E-mail" required autocomplete="off">
+                        <input class="contato_input"  id="asunto" placeholder="Asunto" required autocomplete="off">                        
+                        <textarea class="contato_textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" required autocomplete="off"></textarea>
                         <div class="botones">
-                            <button type="submit" class="contacto__boton">Enviar mensaje</button>
-                            <button type="submit" class="pdf">Descargar PDF</button>
+                            <button type="submit" id="enviar" class="contacto__boton">Enviar mensaje</button>
+                            <button type="submit" id="descargar" class="pdf">Descargar PDF</button>
                         </div>
                     </form>
                 </div>
@@ -290,6 +292,6 @@
                 <p>2023</p>
             </div>
         </section>
-        <script src="script.js"></script>
+        <script src="validacion.js"></script>
     </body>
 </html>
